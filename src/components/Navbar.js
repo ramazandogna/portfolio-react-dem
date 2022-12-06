@@ -3,7 +3,7 @@ import React from 'react';
 
 function Navbar() {
    return (
-      <nav className="bg-white md:justify-center active:border-b-violet-300  border-b-violet-200 border-2 border-violet-400 px-2 sm:px-4 py-2.5 rounded">
+      <nav className="bg-white md:justify-center active:border-b-violet-300  border-b-violet-200 border-2 border-violet-400 px-2 sm:justify-center sm:flex sm:px-4 py-2.5 rounded">
          <div className="container flex flex-wrap items-center justify-between mx-auto">
             <Link to="/" className="flex items-center">
                <span className="self-center active:underline  text-violet-500  hover:text-violet-800 text-xl font-semibold whitespace-nowrap ">
