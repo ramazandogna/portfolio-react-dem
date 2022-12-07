@@ -3,17 +3,17 @@ import React from 'react';
 
 function About() {
    return (
-      <section className=" min-h-screen gap-4">
+      <section className=" border-b-2 border-violet-300 border-t-2 min-h-screen gap-4">
          <div className=" text-center">
-            <h2 className=" text-5xl py-2">About Me</h2>
+            <h2 className=" text-5xl my-4 py-2">About Me</h2>
             <span className=" text-gray-700 text-sm ">My Introduction</span>
             <img
                src={Aboutjpg}
                className=" rounded-tr-xl rounded-bl-xl w-48 my-10 border-2 justify-center self-center mx-auto"
             />
             <p className="max-w-xl mx-auto py-2 m-10">
-               Mal oruspu burak Some introduction about me, Some introduction
-               about me, Some introduction about me
+               Some introduction about me, Some introduction about me, Some
+               introduction about me
             </p>
          </div>
 
