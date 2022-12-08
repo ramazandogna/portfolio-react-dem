@@ -7,7 +7,6 @@ function Skills() {
          <section class="skills section" id="skills">
             <h2 class="section__title">Skills</h2>
             <span class="section__subtitle">My technical level</span>
-            <Progress value={50} label="Completed" />
          </section>
       </div>
    );
