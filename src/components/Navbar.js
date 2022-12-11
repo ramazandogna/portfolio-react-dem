@@ -32,6 +32,14 @@ function Navbar() {
                   </li>
                   <li>
                      <Link
+                        to="/skills"
+                        className="block py-2 pl-3 pr-4 active:underline  text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-800 md:p-0 "
+                     >
+                        Skills
+                     </Link>
+                  </li>
+                  <li>
+                     <Link
                         to="/about"
                         className="block py-2 pl-3 pr-4 active:underline  text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-800 md:p-0 "
                      >
