@@ -10,7 +10,7 @@ function About() {
             <span className={styles.aboutSubTitle}>My Introduction</span>
          </div>
          <div className={styles.imgContainer}>
-            <img src={Aboutjpg} className={styles.aboutImg} />
+            <img src={Aboutjpg} alt="" className={styles.aboutImg} />
             <div>
                <div className={styles.aboutDesc}>
                   <p className={styles.aboutDescription}>

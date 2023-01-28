@@ -1,67 +1,66 @@
-/* PRESENTATION */
+/*-------------------------------------------------------- PRESENTATION -------------------------------------------------------- */
+
+.presentationBg {
+   @apply bg-violet-500 min-h-screen;
+}
 
 .presentation {
-   @apply grid mt-20 mx-40 grid-cols-2
-    
-   min-h-screen gap-4;
+   @apply grid mt-24 mx-40 grid-cols-2
+    gap-4;
 }
 
 .firstDiv {
-   @apply py-2;
+   @apply py-0;
 }
 
 .title {
    @apply py-2
-   hover:text-violet-700 text-violet-600
-   text-5xl font-semibold;
-}
-
-.subTitle {
-   @apply text-lg;
+text-white
+   text-4xl font-semibold font-semibold;
 }
 
 .resume {
-   @apply mx-auto justify-center py-5 
-   text-gray-800
+   @apply mx-auto justify-center py-2
+   text-white font-thin
    max-w-4xl text-base;
 }
 
 .contactButton {
    @apply mt-10 px-10 py-3
    transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 
-   hover:bg-violet-300 hover:text-black
-   rounded-tr-2xl rounded-bl-2xl 
-   bg-violet-600 text-xl
-   text-white  text-center;
+   hover:bg-violet-200 hover:text-violet-800
+   bg-white text-xl
+   text-violet-600  text-center;
 }
 
 .perfilImg {
-   @apply my-10 mx-auto justify-center self-center
+   @apply mx-auto justify-center self-center
     bg-slate-100 
     rounded-full 
     w-10/12;
 }
 
 .scrollDown {
-   @apply flex right-0 left-0 ml-auto mr-auto 
-    hover:text-cyan-800;
+   @apply absolute flex items-center left-40 bottom-12
+   text-white;
+}
+.scrollDownText {
+   @apply px-2;
 }
 
-/* ABOUT */
+/*-------------------------------------------------------- ABOUT -------------------------------------------------------- */
 
 .aboutSection {
-   @apply min-h-screen gap-4
-   border-b-2 border-violet-300 border-t-2;
+   @apply min-h-screen;
 }
 
 .aboutFirstDiv  {
-   @apply py-10 
-   text-center;
+   @apply text-center;
 }
 
 .aboutTitle {
    @apply my-4 py-2
-   font-semibold text-5xl;
+   font-semibold text-4xl;
 }
 
 .aboutSubTitle {
@@ -94,4 +93,4 @@
    @apply block text-center text-xl font-semibold text-gray-900;
 }
 
-/* SKILLS */
+/*-------------------------------------------------------- SKILLS -------------------------------------------------------- */
