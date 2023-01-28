@@ -1,4 +1,5 @@
 import { BiMouse } from 'react-icons/bi';
+import { GrContact } from 'react-icons/gr';
 import Header from '../Header/Header';
 import Perfil from '../../assets/img/perfil.png';
 import React from 'react';
@@ -25,7 +26,11 @@ function Presentation() {
                </p>
 
                <a href="#skills">
-                  <button className={styles.contactButton}>Contact Me</button>
+                  <div className={styles.contactIcon}>
+                     <button className={styles.contactButton}>
+                        CONTACT ME
+                     </button>
+                  </div>
                </a>
             </div>
             <div>
@@ -33,7 +38,7 @@ function Presentation() {
             </div>
             <a href="#about">
                <div className={styles.scrollDown}>
-                  <BiMouse />{' '}
+                  <BiMouse />
                   <span className={styles.scrollDownText}>Aşağı Kaydır</span>
                </div>
             </a>

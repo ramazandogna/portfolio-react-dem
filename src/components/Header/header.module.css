@@ -11,30 +11,29 @@
 }
 
 .logo {
-   @apply left-0 right-0 top-0 relative  p-4
+   @apply left-0 right-0 top-0 relative  pb-4
    active:underline 
-   text-3xl text-white font-semibold whitespace-nowrap border-b-2;
+   text-3xl text-white font-semibold whitespace-nowrap hover:border-b-2;
 }
 
 .navItemsContainer {
    @apply w-full 
-   md:block md:w-auto border-b-2;
+   md:block md:w-auto
+  border-gray-300 hover:border-gray-100;
 }
 
 .navItems {
    @apply flex flex-col p-4 mt-4 
- border-gray-100
    md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0
-   border rounded-lg
    text-gray-300;
    font-family: 'Montserrat-Light';
 }
 
 .navItem {
-   @apply block py-2 pl-3 pr-4 
+   @apply block pt-2 pl-3 pr-4 pb-4
    active:underline
    md:bg-transparent md:p-0
    hover:text-gray-100
-   
+   text-base
    rounded;
 }

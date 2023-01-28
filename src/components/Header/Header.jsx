@@ -12,8 +12,8 @@ function Header() {
             <div className={styles.navItemsContainer} id="navbar-default">
                <ul className={styles.navItems}>
                   <li>
-                     <a href="/" className={styles.navItem} aria-current="page">
-                        Home
+                     <a href="/about" className={styles.navItem}>
+                        Contact
                      </a>
                   </li>
                   <li>
@@ -24,16 +24,6 @@ function Header() {
                   <li>
                      <a href="/skills" className={styles.navItem}>
                         Skills
-                     </a>
-                  </li>
-                  <li>
-                     <a href="/about" className={styles.navItem}>
-                        Testomonial
-                     </a>
-                  </li>
-                  <li>
-                     <a href="/about" className={styles.navItem}>
-                        Contact Me
                      </a>
                   </li>
                </ul>
