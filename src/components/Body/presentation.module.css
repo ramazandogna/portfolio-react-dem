@@ -15,7 +15,8 @@
 .title {
    @apply py-2
 text-white
-   text-4xl font-semibold font-semibold;
+   text-4xl font-semibold 
+   border-b-2 border-transparent hover:border-b-2 hover:border-white duration-300;
 }
 
 .resume {
@@ -25,12 +26,11 @@ text-white
 }
 
 .contactButton {
-   @apply mt-10 px-5 py-3 flex items-center text-center
-   transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 
-   hover:bg-violet-200 hover:text-violet-800 hover:border-violet-800 hover:border-solid hover:border-2
-   text-xl
-   text-white
-   border border-dashed border-white;
+   @apply mt-10 px-5 py-2.5 flex items-center text-center
+   transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 
+   hover:bg-violet-200 hover:text-violet-800 hover:border-violet-800 hover:border-4
+   text-xl text-white
+   border-2  border-white;
 }
 
 .contactIcon {
@@ -38,7 +38,9 @@ text-white
 }
 
 .perfilImg {
-   @apply mx-auto justify-center self-center;
+   @apply mx-auto justify-center self-center
+   transition ease-in-out delay-150 rounded-2xl
+    hover:-translate-y-1 hover:scale-110  duration-200;
    width: 380px;
 }
 
@@ -64,7 +66,8 @@ text-white
 
 .aboutTitle {
    @apply text-center mx-auto p-2 w-4/12 
-   font-semibold text-violet-700 border-b-2  text-4xl;
+   font-semibold text-violet-700 text-4xl
+   border-b-2 border-violet-500   hover:border-b-4 hover:border-violet-700 duration-300;
 }
 
 .aboutSubTitle {
@@ -76,18 +79,25 @@ text-white
 }
 
 .aboutImg {
-   @apply w-96 my-10  justify-center self-center mx-auto
-   rounded-full border-4 border-yellow-700;
+   @apply my-10  justify-center self-center mx-auto
+   rounded-full border-4 border-violet-300
+   hover:-translate-y-1 hover:scale-110 duration-200;
+   width: 28rem;
 }
 
 .aboutDesc {
-   @apply grid;
+   @apply grid
+   transition ease-in-out delay-150
+   hover:-translate-y-1 hover:scale-110 duration-200;
 }
 
 .aboutDescription {
-   @apply mx-auto py-2 m-10
+   @apply mx-auto py-2 m-10 p-6
     max-w-xl
-    text-violet-700;
+    transition ease-in-out delay-150
+    hover:-translate-y-1 hover:scale-110  duration-200
+    text-violet-700 shadow-sm rounded-2xl
+    hover:shadow-2xl;
 }
 
 .experiences {
@@ -95,7 +105,9 @@ text-white
 }
 
 .experiencesBorder {
-   @apple border-2 border-violet-700;
+   @apply border-2 p-4 border-violet-300 rounded-3xl
+   shadow-sm
+   hover:-translate-y-1 hover:scale-110 duration-200;
 }
 
 .experiencesYear {
@@ -105,7 +117,7 @@ text-white
 
 .experiencesText {
    @apply block 
-   text-center text-violet-700 text-lg;
+   text-center text-violet-700 font-thin text-lg;
 }
 
 .guarantee {
@@ -117,17 +129,19 @@ text-white
 .quaranteeItem {
    @apply mt-20 inline-block
     text-violet-500
-    hover:text-violet-700;
+    hover:text-violet-700
+    transition ease-in-out delay-150
+    hover:-translate-y-1 hover:scale-110  duration-200;
    font-size: 5rem;
 }
 
 .quaranteeTitle {
    @apply text-center mt-4 mb-2
-   text-2xl text-violet-700;
+   text-2xl text-violet-700
+   border-b-2 border-transparent hover:border-b-2 hover:border-violet-700 border-opacity-50 duration-300;
 }
 
 .quaranteeP {
    @apply my-4
    text-base text-violet-600 font-thin;
 }
-/*-------------------------------------------------------- SKILLS -------------------------------------------------------- */

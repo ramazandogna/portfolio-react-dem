@@ -1,0 +1,129 @@
+.section {
+   @apply relative h-screen;
+}
+.title {
+   @apply flex justify-center py-2 mt-10
+   text-5xl text-violet-600;
+}
+
+.skillsP {
+   @apply py-2
+    text-center text-gray-600 text-sm;
+}
+
+.container {
+   @apply grid 
+    lg:grid-cols-2 
+    md:grid-cols-2 
+    sm:grid-cols-1;
+}
+
+.secondContainer {
+   @apply py-2 text-violet-700;
+}
+
+.dropdownContainer {
+   @apply flex items-center justify-evenly mx-32 my-10  p-2
+   rounded-full  box-border
+   cursor-pointer;
+}
+
+.skillContainer {
+   @apply flex text-violet-700 items-center;
+}
+
+.skillIcon {
+   @apply text-5xl;
+}
+
+.skillSubContainer {
+   @apply ml-5  block 
+    items-center;
+}
+
+.skillTitle {
+   @apply font-semibold text-violet-700 text-2xl;
+}
+
+.skillP {
+   @apply text-base text-gray-500;
+}
+
+.upDownIcon {
+   @apply text-4xl;
+}
+
+.skillsListContainer {
+   @apply w-1/2 relative left-0 right-0 mr-auto ml-auto;
+}
+
+.listContainerItems {
+   @apply flex justify-between;
+}
+
+.skillItemName {
+   @apply text-gray-600 mb-1 text-base font-medium;
+}
+
+.skillItemPercentage {
+   @apply relative right-0 top-0 mb-1 
+   text-base font-medium text-gray-600;
+}
+
+.percentageBar {
+   @apply h-1.5 mb-4
+   bg-gray-200 rounded-full  dark:bg-gray-700;
+}
+
+.percentage100 {
+   @apply w-full h-1.5 
+   bg-violet-600
+   rounded-full 
+   dark:bg-violet-500;
+}
+.percentage60 {
+   @apply w-8/12 h-1.5 
+   bg-violet-600
+   rounded-full 
+   dark:bg-violet-500;
+}
+.percentage70 {
+   @apply w-9/12 h-1.5 
+   bg-violet-600
+   rounded-full 
+   dark:bg-violet-500;
+}
+.percentage80 {
+   @apply w-10/12 h-1.5 
+   bg-violet-600
+   rounded-full 
+   dark:bg-violet-500;
+}
+
+/*---------------------------------Second Section-------------------------------- */
+
+.secondSection {
+   @apply absolute flex w-full items-center justify-center text-center bottom-0
+   text-yellow-300 text-3xl 
+   bg-violet-700;
+   height: 30vh;
+}
+
+.topQuoteIcon {
+   @apply absolute top-5;
+}
+
+.quote {
+   @apply absolute items-center  font-semibold;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+.quoteName {
+   @apply mt-3
+   text-2xl text-yellow-100 font-thin;
+   font-family: 'Monterrey', sans-serif;
+}
+
+.quoteBorder {
+   @apply absolute bottom-5;
+}

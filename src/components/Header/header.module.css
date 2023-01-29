@@ -7,13 +7,14 @@
 }
 
 .navDiv {
-   @apply container flex flex-wrap items-center justify-between mx-36;
+   @apply container flex flex-wrap items-center justify-between ml-36 mr-36;
 }
 
 .logo {
    @apply left-0 right-0 top-0 relative  pb-4
    active:underline 
-   text-3xl text-white font-semibold whitespace-nowrap hover:border-b-2;
+   text-3xl text-white font-semibold whitespace-nowrap 
+   border-b-2 border-transparent hover:border-b-2 hover:border-white duration-300;
 }
 
 .navItemsContainer {
@@ -34,6 +35,6 @@
    active:underline
    md:bg-transparent md:p-0
    hover:text-gray-100
-   text-base
+   text-lg
    rounded;
 }
