@@ -1,5 +1,4 @@
 import { BiMouse } from 'react-icons/bi';
-import { GrContact } from 'react-icons/gr';
 import Header from '../Header/Header';
 import Perfil from '../../assets/img/perfil.png';
 import React from 'react';
@@ -24,25 +23,22 @@ function Presentation() {
                   passages, and more recently with desktop publishing software
                   like Aldus PageMaker including versions of Lorem Ipsum.
                </p>
-
-               <a href="#skills">
-                  <div className={styles.contactIcon}>
-                     <button className={styles.contactButton}>
-                        CONTACT ME
-                     </button>
-                  </div>
-               </a>
             </div>
             <div>
                <img src={Perfil} alt="" className={styles.perfilImg} />
             </div>
-            <a href="#about">
-               <div className={styles.scrollDown}>
-                  <BiMouse />
-                  <span className={styles.scrollDownText}>Aşağı Kaydır</span>
+            <a href="#skills">
+               <div className={styles.contactIcon}>
+                  <button className={styles.contactButton}>CONTACT ME</button>
                </div>
             </a>
          </div>
+         <a href="#about">
+            <div className={styles.scrollDown}>
+               <BiMouse />
+               <span className={styles.scrollDownText}>Aşağı Kaydır</span>
+            </div>
+         </a>
       </section>
    );
 }

@@ -1,5 +1,5 @@
 import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai';
-import { FaQuoteLeft, FaQuoteRight, FaReact } from 'react-icons/fa';
+import { FaQuoteLeft, FaReact } from 'react-icons/fa';
 import React, { useState } from 'react';
 
 import { GiSkills } from 'react-icons/gi';

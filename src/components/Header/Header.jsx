@@ -12,17 +12,17 @@ function Header() {
             <div className={styles.navItemsContainer} id="navbar-default">
                <ul className={styles.navItems}>
                   <li>
-                     <a href="/about" className={styles.navItem}>
+                     <a href="#about" className={styles.navItem}>
                         Contact
                      </a>
                   </li>
                   <li>
-                     <a href="/about" className={styles.navItem}>
+                     <a href="#about" className={styles.navItem}>
                         About
                      </a>
                   </li>
                   <li>
-                     <a href="/skills" className={styles.navItem}>
+                     <a href="#skills" className={styles.navItem}>
                         Skills
                      </a>
                   </li>

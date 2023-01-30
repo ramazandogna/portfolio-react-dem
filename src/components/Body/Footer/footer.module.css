@@ -1,0 +1,41 @@
+.section {
+   @apply bg-violet-100 flex relative justify-center h-screen items-center
+   text-center;
+}
+
+.container {
+   @apply w-screen py-16
+   bg-yellow-300;
+}
+.footerParag {
+   @apply text-3xl px-5 font-bold font-serif
+   transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110;
+   line-height: 4rem;
+}
+
+.pToB {
+   @apply my-10 inline-block text-5xl justify-center
+   transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110;
+}
+
+.buttons {
+   @apply flex justify-center;
+}
+
+.button {
+   @apply my-5 mx-3 pr-3 px-2 py-2 flex items-center
+   border-2 border-dashed border-black
+   bg-violet-700 text-yellow-300
+   hover:bg-black hover:border-white hover:text-white hover:border-solid
+   transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110;
+}
+
+.buttonIcon {
+   @apply m-1;
+}
+
+.copyright {
+   @apply flex items-center w-screen py-0 text-gray-400 justify-center  absolute bottom-0
+   hover:text-gray-500;
+   height: 20vh;
+}

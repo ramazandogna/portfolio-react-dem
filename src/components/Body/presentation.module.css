@@ -5,7 +5,9 @@
 }
 
 .presentation {
-   @apply grid mt-24 mx-40 grid-cols-2;
+   @apply grid mt-24 mx-40 grid-cols-2
+   max-md:grid-cols-2
+   max-sm:grid-cols-1;
 }
 
 .firstDiv {
@@ -38,7 +40,7 @@ text-white
 }
 
 .perfilImg {
-   @apply mx-auto justify-center self-center
+   @apply mx-auto justify-center self-center shadow-sm
    transition ease-in-out delay-150 rounded-2xl
     hover:-translate-y-1 hover:scale-110  duration-200;
    width: 380px;
@@ -46,7 +48,8 @@ text-white
 
 .scrollDown {
    @apply absolute flex items-center left-40 bottom-12
-   text-white;
+   text-white
+   max-sm:relative max-sm:left-20;
 }
 .scrollDownText {
    @apply px-2;
@@ -79,15 +82,16 @@ text-white
 }
 
 .aboutImg {
-   @apply my-10  justify-center self-center mx-auto
+   @apply my-10  justify-center self-center mx-auto shadow-sm
    rounded-full border-4 border-violet-300
-   hover:-translate-y-1 hover:scale-110 duration-200;
+   hover:-translate-y-1 hover:scale-110 duration-200
+   hover:shadow-xl;
    width: 28rem;
 }
 
 .aboutDesc {
    @apply grid
-   transition ease-in-out delay-150
+   transition ease-in-out delay-200
    hover:-translate-y-1 hover:scale-110 duration-200;
 }
 
@@ -122,16 +126,17 @@ text-white
 
 .guarantee {
    @apply absolute flex w-full bottom-0 justify-evenly 
-   bg-yellow-200;
+   bg-yellow-300;
    min-height: 30vh;
 }
 
 .quaranteeItem {
-   @apply mt-20 inline-block
+   @apply mt-20 inline-block 
     text-violet-500
     hover:text-violet-700
     transition ease-in-out delay-150
-    hover:-translate-y-1 hover:scale-110  duration-200;
+    hover:-translate-y-1 hover:scale-110  duration-200
+    hover:rotate-45;
    font-size: 5rem;
 }
 
