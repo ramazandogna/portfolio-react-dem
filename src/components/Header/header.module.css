@@ -1,22 +1,26 @@
 .nav {
-   @apply py-10 align-middle flex justify-between
-   max-sm:px-4 max-sm:flex max-sm:justify-center max-sm:text-center
+   @apply py-10 items-center flex justify-between text-center
+   max-sm:px-4 max-sm:flex max-sm:justify-center  max-sm:py-2
+   max-md:border-b-2
+   max-lg:px-4 max-lg:flex max-lg:justify-center max-lg:py-2
    rounded;
    font-family: 'Ubuntu', sans-serif;
 }
 
 .navDiv {
-   @apply container flex flex-wrap justify-between items-center ml-36
-   max-sm:justify-center
-   md:mx-24 max-md:justify-center;
+   @apply container flex flex-wrap justify-between items-center ml-40 mr-40
+   max-sm:justify-center max-sm:ml-0
+   max-md:mx-0 max-md:justify-center
+    max-lg:justify-center max-lg:block;
 }
 
 .logo {
-   @apply left-0 right-0 top-0 flex relative  pb-4
+   @apply left-0 right-0 top-0 flex relative  p-4
    active:underline
    text-3xl text-white font-semibold whitespace-nowrap 
    border-b-2 border-transparent hover:border-b-2 hover:border-white duration-300
-   max-sm:ml-auto;
+   max-sm:ml-auto
+   max-lg:justify-center max-lg:inline-block;
 }
 
 .navItemsContainer {
@@ -27,7 +31,8 @@
 
 .navItems {
    @apply flex flex-col p-4 mt-4 
-   md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0
+   md:flex-row md:space-x-8 md:mt-0 
+   max-lg:justify-center
    text-gray-300;
    font-family: 'Montserrat-Light';
 }
@@ -38,5 +43,5 @@
    md:bg-transparent md:p-0
    hover:text-gray-100
    text-lg
-   rounded;
+   md:border-b;
 }

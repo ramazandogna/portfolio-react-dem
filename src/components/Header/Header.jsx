@@ -3,7 +3,7 @@ import styles from './header.module.css';
 
 function Header() {
    return (
-      <nav className={styles.nav}>
+      <div className={styles.nav}>
          <div className={styles.navDiv}>
             <a href="/">
                <span className={styles.logo}>ramazandoğan</span>
@@ -29,7 +29,7 @@ function Header() {
                </ul>
             </div>
          </div>
-      </nav>
+      </div>
    );
 }
 

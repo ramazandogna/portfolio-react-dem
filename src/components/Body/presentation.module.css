@@ -5,9 +5,9 @@
 }
 
 .presentation {
-   @apply grid mt-24 mx-40 grid-cols-2
-   max-md:grid-cols-2
-   max-sm:grid-cols-1;
+   @apply grid mt-24 relative mx-40 grid-cols-2
+   max-lg:grid-cols-1 
+   max-lg:mt-10 max-lg:mx-5 max-lg:text-center max-lg:justify-center;
 }
 
 .firstDiv {
@@ -18,7 +18,9 @@
    @apply py-2
 text-white
    text-4xl font-semibold 
-   border-b-2 border-transparent hover:border-b-2 hover:border-white duration-300;
+   border-b-2 border-transparent hover:border-b-2 hover:border-white duration-300
+   max-lg:grid-cols-1 max-lg:text-center 
+   max-lg:mx-5 max-lg:justify-center max-lg:inline-block;
 }
 
 .resume {
@@ -32,24 +34,30 @@ text-white
    transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 
    hover:bg-violet-200 hover:text-violet-800 hover:border-violet-800 hover:border-4
    text-xl text-white
-   border-2  border-white;
+   border-2  border-white
+   max-sm:mt-2
+   max-lg:mx-auto;
 }
 
 .contactIcon {
-   @apply px-2 text-white;
+   @apply px-2 text-white 
+   max-sm:flex max-sm:justify-center;
 }
 
 .perfilImg {
-   @apply mx-auto justify-center self-center shadow-sm
-   transition ease-in-out delay-150 rounded-2xl
-    hover:-translate-y-1 hover:scale-110  duration-200;
+   @apply flex ml-auto py-2 
+   shadow-2xl  
+   rounded-2xl
+   max-md:mb-5 max-md:mx-auto
+   max-lg:mx-auto my-5;
+
    width: 380px;
 }
 
 .scrollDown {
-   @apply absolute flex items-center left-40 bottom-12
-   text-white
-   max-sm:relative max-sm:left-20;
+   @apply flex py-4 justify-center items-center absolute bottom-5 left-0 right-0 mx-auto
+   text-white mt-2
+   max-lg:relative max-sm:justify-center;
 }
 .scrollDownText {
    @apply px-2;
@@ -78,7 +86,10 @@ text-white
 }
 
 .imgContainer {
-   @apply grid-cols-2 grid mx-40 mt-10 items-center;
+   @apply grid-cols-2 grid mx-40 mt-10 items-center
+   max-lg:grid-cols-1
+   max-md:grid-cols-1
+   max-sm:grid-cols-1 max-sm:mt-5 max-sm:mx-5 max-sm:text-center max-sm:justify-center;
 }
 
 .aboutImg {
@@ -105,11 +116,11 @@ text-white
 }
 
 .experiences {
-   @apply p-4 flex  justify-evenly;
+   @apply p-4 flex justify-evenly;
 }
 
 .experiencesBorder {
-   @apply border-2 p-4 border-violet-300 rounded-3xl
+   @apply border-2 p-4 mx-2 border-violet-300 rounded-3xl
    shadow-sm
    hover:-translate-y-1 hover:scale-110 duration-200;
 }
@@ -125,18 +136,22 @@ text-white
 }
 
 .guarantee {
-   @apply absolute flex w-full bottom-0 justify-evenly 
-   bg-yellow-300;
-   min-height: 30vh;
+   @apply flex w-full relative bottom-0 justify-evenly 
+   bg-yellow-300
+   max-md:px-16 max-md:block;
+}
+
+.quarantees {
+   @apply w-1/3
+   max-md:mx-auto max-md:px-4;
 }
 
 .quaranteeItem {
-   @apply mt-20 inline-block 
+   @apply mt-10 inline-block 
     text-violet-500
     hover:text-violet-700
     transition ease-in-out delay-150
-    hover:-translate-y-1 hover:scale-110  duration-200
-    hover:rotate-45;
+    hover:-translate-y-1 hover:scale-110  duration-200;
    font-size: 5rem;
 }
 

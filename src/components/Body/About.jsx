@@ -53,7 +53,7 @@ function About() {
             </div>
          </div>
          <div className={styles.guarantee}>
-            <div>
+            <div className={styles.quarantees}>
                <div className={styles.quaranteeItem}>
                   <AiFillCheckCircle />
                </div>
@@ -63,7 +63,7 @@ function About() {
                   even your child could do it.
                </p>
             </div>
-            <div>
+            <div className={styles.quarantees}>
                <div className={styles.quaranteeItem}>
                   <FiTarget />
                </div>
@@ -72,7 +72,7 @@ function About() {
                   We have all the work, the <br /> greatest work.
                </p>
             </div>
-            <div>
+            <div className={styles.quarantees}>
                <div className={styles.quaranteeItem}>
                   <AiFillHeart />
                </div>

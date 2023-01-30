@@ -1,9 +1,12 @@
 .section {
-   @apply relative h-screen;
+   @apply relative h-screen
+   max-md:h-fit;
 }
+
 .title {
-   @apply flex justify-center py-2 mt-10
-   text-5xl text-violet-600;
+   @apply flex mx-auto justify-center py-2 mt-10 w-4/12
+   text-5xl text-violet-600
+   border-b-2 border-violet-500   hover:border-b-4 hover:border-violet-700 duration-300;
 }
 
 .skillsP {
@@ -12,10 +15,9 @@
 }
 
 .container {
-   @apply grid 
-    lg:grid-cols-2 
-    md:grid-cols-2 
-    sm:grid-cols-1;
+   @apply grid grid-cols-2
+    max-md:grid-cols-2 
+    max-sm:grid-cols-1;
 }
 
 .secondContainer {
@@ -23,7 +25,7 @@
 }
 
 .dropdownContainer {
-   @apply flex items-center justify-evenly mx-32 my-10  p-2
+   @apply flex items-center justify-evenly mx-12 my-10  p-2
    rounded-full  box-border
    cursor-pointer;
 }
@@ -103,7 +105,7 @@
 /*---------------------------------Second Section-------------------------------- */
 
 .secondSection {
-   @apply absolute flex w-full items-center justify-center text-center bottom-0
+   @apply relative flex w-full items-center justify-center text-center bottom-0
    text-yellow-300 text-3xl 
    bg-violet-700;
    height: 30vh;
@@ -114,7 +116,7 @@
 }
 
 .quote {
-   @apply absolute items-center  font-semibold;
+   @apply absolute items-center px-4  font-semibold;
    font-family: 'Ubuntu', sans-serif;
 }
 

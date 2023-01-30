@@ -1,10 +1,10 @@
 .section {
-   @apply bg-violet-100 flex relative justify-center h-screen items-center
+   @apply bg-violet-100  relative justify-center h-fit items-center
    text-center;
 }
 
 .container {
-   @apply w-screen py-16
+   @apply w-full py-16
    bg-yellow-300;
 }
 .footerParag {
@@ -15,11 +15,13 @@
 
 .pToB {
    @apply my-10 inline-block text-5xl justify-center
-   transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110;
+   transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110
+   max-md:flex max-md:w-full;
 }
 
 .buttons {
-   @apply flex justify-center;
+   @apply flex justify-center text-center
+   max-md:block;
 }
 
 .button {
@@ -27,7 +29,8 @@
    border-2 border-dashed border-black
    bg-violet-700 text-yellow-300
    hover:bg-black hover:border-white hover:text-white hover:border-solid
-   transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110;
+   transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110
+   max-md:mx-auto;
 }
 
 .buttonIcon {
@@ -35,7 +38,7 @@
 }
 
 .copyright {
-   @apply flex items-center w-screen py-0 text-gray-400 justify-center  absolute bottom-0
-   hover:text-gray-500;
+   @apply flex items-center py-0 justify-center w-full bottom-0
+   text-gray-400;
    height: 20vh;
 }

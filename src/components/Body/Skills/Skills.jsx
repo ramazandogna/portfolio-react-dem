@@ -12,7 +12,7 @@ function Skills() {
 
    return (
       <section className={styles.section}>
-         <div id="skills">
+         <div>
             <h2 className={styles.title}>
                Skills <GiSkills />
             </h2>
