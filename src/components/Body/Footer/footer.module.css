@@ -1,5 +1,35 @@
+/* QUOTE */
+.secondSection {
+   @apply flex w-full relative items-center justify-center text-center 
+   text-yellow-300 text-3xl 
+   bg-violet-700 h-fit;
+   height: 30vh;
+}
+
+.topQuoteIcon {
+   @apply absolute top-5
+   hover:rotate-12 duration-200 ease-in-out scale-125;
+}
+
+.quote {
+   @apply items-center px-4  font-semibold;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+.quoteName {
+   @apply mt-3
+   text-2xl text-yellow-100 font-thin;
+   font-family: 'Monterrey', sans-serif;
+}
+
+.quoteBorder {
+   @apply absolute bottom-5;
+}
+
+/* SECOND PART */
+
 .section {
-   @apply bg-violet-100  relative justify-center h-fit items-center
+   @apply bg-violet-100  relative justify-center items-center
    text-center;
 }
 

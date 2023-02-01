@@ -1,9 +1,8 @@
 import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai';
-import { FaQuoteLeft, FaReact } from 'react-icons/fa';
 import React, { useState } from 'react';
 
+import { FaReact } from 'react-icons/fa';
 import { GiSkills } from 'react-icons/gi';
-import { RxBorderDashed } from 'react-icons/rx';
 import styles from './skills.module.css';
 
 function Skills() {
@@ -118,6 +117,7 @@ function Skills() {
                         <p className={styles.skillP}>More then 1 years</p>
                      </div>
                   </div>
+
                   {show1 === true ? (
                      <AiOutlineArrowUp className={styles.upDownIcon} />
                   ) : (
@@ -190,19 +190,6 @@ function Skills() {
                      </div>
                   </div>
                ) : null}
-            </div>
-         </div>
-         <div className={styles.secondSection}>
-            <div className={styles.topQuoteIcon}>
-               <FaQuoteLeft />
-            </div>
-            <div className={styles.quote}>
-               İyi eleman seç, iyi para ver. <br /> Çünkü kötü eleman, sana
-               pahalıya mal olur. <br />
-               <div className={styles.quoteName}>Vehbi Koç</div>
-            </div>
-            <div className={styles.quoteBorder}>
-               <RxBorderDashed />
             </div>
          </div>
       </section>

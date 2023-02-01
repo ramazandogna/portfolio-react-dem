@@ -50,7 +50,7 @@ text-white
    shadow-2xl  
    rounded-2xl
    max-md:mb-5 max-md:mx-auto
-   max-lg:mx-auto my-5;
+   max-lg:mx-auto max-lg:my-5;
 
    width: 380px;
 }
@@ -144,8 +144,8 @@ text-white
 }
 
 .quarantees {
-   @apply w-1/3
-   max-md:mx-auto  max-md:px-4;
+   @apply w-1/3 
+   max-md:w-6/12 max-md:mx-auto  max-md:px-4;
 }
 
 .quaranteeItem {

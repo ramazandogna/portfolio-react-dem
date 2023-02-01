@@ -1,11 +1,11 @@
 .section {
    @apply relative h-screen
-   max-md:h-fit;
+   max-md:h-screen;
 }
 
 .title {
-   @apply flex mx-auto justify-center py-2 mt-10 w-4/12
-   text-5xl text-violet-600
+   @apply flex mx-auto justify-center p-2  w-4/12
+   text-5xl font-semibold text-violet-600 max-md:w-6/12
    border-b-2 border-violet-500   hover:border-b-4 hover:border-violet-700 duration-300;
 }
 
@@ -15,8 +15,8 @@
 }
 
 .container {
-   @apply grid grid-cols-2
-    max-md:grid-cols-2 
+   @apply grid grid-cols-2 text-center
+    max-md:grid-cols-1 
     max-sm:grid-cols-1;
 }
 
@@ -25,26 +25,31 @@
 }
 
 .dropdownContainer {
-   @apply flex items-center justify-evenly mx-12 my-10  p-2
-   rounded-full  box-border
-   cursor-pointer;
+   @apply flex items-center  mx-16 mt-5 mb-5  py-2
+    border-b-2
+   cursor-pointer  border-violet-700
+   hover:scale-110 duration-200 hover:border-b-2 hover:border-violet-700;
 }
 
 .skillContainer {
-   @apply flex text-violet-700 items-center;
-}
-
-.skillIcon {
-   @apply text-5xl;
+   @apply flex text-violet-700 mx-auto items-center;
 }
 
 .skillSubContainer {
-   @apply ml-5  block 
+   @apply block
     items-center;
 }
 
+.skillIcon {
+   @apply text-5xl
+   hover:-translate-y-1 hover:scale-110 duration-200 hover:rotate-90;
+}
+
 .skillTitle {
-   @apply font-semibold text-violet-700 text-2xl;
+   @apply mx-8 
+   font-semibold text-violet-700 text-2xl
+   border-b-2 border-transparent
+   hover:scale-110 duration-200 hover:border-b-2 hover:border-violet-700;
 }
 
 .skillP {
@@ -52,11 +57,13 @@
 }
 
 .upDownIcon {
-   @apply text-4xl;
+   @apply text-4xl
+   hover:rotate-12 duration-200;
 }
 
 .skillsListContainer {
-   @apply w-1/2 relative left-0 right-0 mr-auto ml-auto;
+   @apply w-9/12 relative mx-auto     
+   hover:-translate-y-1 hover:scale-110 duration-200;
 }
 
 .listContainerItems {
@@ -100,32 +107,4 @@
    bg-violet-600
    rounded-full 
    dark:bg-violet-500;
-}
-
-/*---------------------------------Second Section-------------------------------- */
-
-.secondSection {
-   @apply absolute flex w-full items-center justify-center text-center bottom-0
-   text-yellow-300 text-3xl 
-   bg-violet-700;
-   height: 30vh;
-}
-
-.topQuoteIcon {
-   @apply absolute top-5;
-}
-
-.quote {
-   @apply absolute items-center px-4  font-semibold;
-   font-family: 'Ubuntu', sans-serif;
-}
-
-.quoteName {
-   @apply mt-3
-   text-2xl text-yellow-100 font-thin;
-   font-family: 'Monterrey', sans-serif;
-}
-
-.quoteBorder {
-   @apply absolute bottom-5;
 }

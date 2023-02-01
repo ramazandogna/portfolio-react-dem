@@ -5,12 +5,27 @@ import {
    AiOutlineTwitter,
 } from 'react-icons/ai';
 
+import { FaQuoteLeft } from 'react-icons/fa';
 import React from 'react';
+import { RxBorderDashed } from 'react-icons/rx';
 import styles from './footer.module.css';
 
 function Footer() {
    return (
       <section className={styles.section}>
+         <div className={styles.secondSection}>
+            <div className={styles.topQuoteIcon}>
+               <FaQuoteLeft />
+            </div>
+            <div className={styles.quote}>
+               İyi eleman seç, iyi para ver. <br /> Çünkü kötü eleman, sana
+               pahalıya mal olur. <br />
+               <div className={styles.quoteName}>Vehbi Koç</div>
+            </div>
+            <div className={styles.quoteBorder}>
+               <RxBorderDashed />
+            </div>
+         </div>
          <div className={styles.container}>
             <p className={styles.footerParag}>
                There is no important who you are, <br /> just say hi! to me in
