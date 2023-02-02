@@ -35,6 +35,7 @@ function Presentation() {
                <img src={Perfil} alt="" className={styles.perfilImg} />
             </div>
          </div>
+
          <a href="#about">
             <div className={styles.scrollDown}>
                <BiMouse />

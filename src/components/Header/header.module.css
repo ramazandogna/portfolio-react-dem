@@ -18,9 +18,19 @@
    @apply left-0 right-0 top-0 flex relative  p-4
    active:underline
    text-3xl text-white font-semibold whitespace-nowrap 
-   border-b-2 border-transparent hover:border-b-2 hover:border-white duration-300
+   border-b-2 border-transparent duration-500
    max-sm:ml-auto
    max-lg:justify-center max-lg:inline-block;
+}
+
+.logo::after {
+   @apply absolute content-[""] bg-white h-[3px] w-[0%] left-0 
+   -bottom-2 rounded-full 
+   duration-300;
+}
+
+.logo:hover::after {
+   @apply w-[100%];
 }
 
 .navItemsContainer {
@@ -38,10 +48,20 @@
 }
 
 .navItem {
-   @apply block pt-2 pl-3 pr-4 pb-4
-   active:underline
+   @apply relative pt-2 pl-3 pr-4 pb-4 
    md:bg-transparent md:p-0
    hover:text-gray-100
    text-lg
-   md:border-b;
+   
+   hover:border-white;
+}
+
+.navItem::after {
+   @apply absolute content-[""] bg-white h-[3px] w-[0%] left-0 
+   -bottom-2 rounded-full 
+   duration-500;
+}
+
+.navItem:hover::after {
+   @apply w-[100%];
 }

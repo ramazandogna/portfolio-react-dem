@@ -12,7 +12,7 @@ function Header() {
             <div className={styles.navItemsContainer} id="navbar-default">
                <ul className={styles.navItems}>
                   <li>
-                     <a href="#about" className={styles.navItem}>
+                     <a href="#Contact" className={styles.navItem}>
                         Contact
                      </a>
                   </li>

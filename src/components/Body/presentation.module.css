@@ -16,11 +16,20 @@
 
 .title {
    @apply py-2
-text-white
+text-white relative
    text-4xl font-semibold 
-   border-b-2 border-transparent hover:border-b-2 hover:border-white duration-300
    max-lg:grid-cols-1 max-lg:text-center 
    max-lg:mx-5 max-lg:justify-center max-lg:inline-block;
+}
+
+.title::after {
+   @apply absolute content-[""] bg-white h-[3px] w-[0%] left-0 
+   -bottom-2 rounded-full 
+   duration-[400ms];
+}
+
+.title:hover::after {
+   @apply w-[100%];
 }
 
 .resume {
@@ -32,13 +41,20 @@ text-white
 
 .contactButton {
    @apply my-4 px-5 py-2.5 flex items-center text-center
-   transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 
-   hover:bg-violet-200 hover:text-violet-800 hover:border-violet-800 hover:border-4
-   text-xl text-white
-   border-2  border-white
+   transition duration-500 ease-in-out transform    text-xl text-white 
+   border-2 border-white
    max-sm:mt-2
    max-lg:mx-auto;
 }
+
+.contactButton:hover {
+   @apply hover:-translate-y-1 hover:scale-110 
+   hover:bg-white hover:text-violet-800 hover:border-violet-800 hover:border-4;
+}
+
+/* .contactButton:hover {
+   @apply;
+} */
 
 .contactIcon {
    @apply px-2 text-white 

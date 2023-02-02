@@ -10,7 +10,7 @@ function Skills() {
    const [show1, setShow1] = useState(true);
 
    return (
-      <section className={styles.section}>
+      <section id="skills" className={styles.section}>
          <div>
             <h2 className={styles.title}>
                Skills <GiSkills />
