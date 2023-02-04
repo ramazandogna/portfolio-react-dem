@@ -1,9 +1,9 @@
 import { AiFillCheckCircle, AiFillHeart } from 'react-icons/ai';
 
-import Aboutjpg from '../../assets/img/about.jpg';
+import Aboutjpg from '../assets/img/about.jpg';
 import { FiTarget } from 'react-icons/fi';
 import React from 'react';
-import styles from './presentation.module.css';
+import styles from '../styles/about.module.css';
 
 function About() {
    return (

@@ -8,7 +8,7 @@ import {
 import { FaQuoteLeft } from 'react-icons/fa';
 import React from 'react';
 import { RxBorderDashed } from 'react-icons/rx';
-import styles from './footer.module.css';
+import styles from '../styles/footer.module.css';
 
 function Footer() {
    return (

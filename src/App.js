@@ -1,9 +1,9 @@
 import './App.css';
 
-import About from './components/Body/About';
-import Footer from './components/Body/Footer/Footer';
-import Presentation from './components/Body/Presentation';
-import Skills from './components/Body/Skills/Skills';
+import About from './components/About.jsx';
+import Footer from './components/Footer.jsx';
+import Presentation from './components/Presentation.jsx';
+import Skills from './components/Skills.jsx';
 
 function App() {
    return (

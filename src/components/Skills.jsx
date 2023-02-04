@@ -1,13 +1,13 @@
 import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai';
+import { FaReact, FaWalking } from 'react-icons/fa';
 import React, { useState } from 'react';
 
-import { FaReact } from 'react-icons/fa';
 import { GiSkills } from 'react-icons/gi';
-import styles from './skills.module.css';
+import styles from '../styles/skills.module.css';
 
 function Skills() {
-   const [show, setShow] = useState(true);
-   const [show1, setShow1] = useState(true);
+   const [show, setShow] = useState('visible');
+   const [show1, setShow1] = useState('hidden');
 
    return (
       <section id="skills" className={styles.section}>
@@ -20,25 +20,29 @@ function Skills() {
          <div className={styles.container}>
             <div className={styles.secondContainer}>
                <div
-                  onClick={() => setShow(!show)}
+                  onClick={() => {
+                     setShow(!show);
+                  }}
                   className={styles.dropdownContainer}
                >
                   <div className={styles.skillContainer}>
                      <FaReact className={styles.skillIcon} />
                      <div className={styles.skillSubContainer}>
-                        <h3 className={styles.skillTitle}>Frontend Skill</h3>
+                        <h3 className={styles.skillTitle}>
+                           Frontend Development
+                        </h3>
 
                         <p className={styles.skillP}>More then 1 years</p>
                      </div>
                   </div>
-                  {show === true ? (
+                  {show === 'visible' ? (
                      <AiOutlineArrowUp className={styles.upDownIcon} />
                   ) : (
                      <AiOutlineArrowDown className={styles.upDownIcon} />
                   )}
                </div>
                {show === true ? (
-                  <div>
+                  <div clas>
                      <div className={styles.skillsListContainer}>
                         <div className={styles.listContainerItems}>
                            <div className={styles.skillItemName}>HTML5</div>
@@ -110,11 +114,11 @@ function Skills() {
                   className={styles.dropdownContainer}
                >
                   <div className={styles.skillContainer}>
-                     <FaReact className={styles.skillIcon} />
+                     <FaWalking className={styles.skillIcon} />
                      <div className={styles.skillSubContainer}>
-                        <h3 className={styles.skillTitle}>Frontend Skill</h3>
+                        <h3 className={styles.skillTitle}>Hobbies</h3>
 
-                        <p className={styles.skillP}>More then 1 years</p>
+                        <p className={styles.skillP}>Since childhood</p>
                      </div>
                   </div>
 
@@ -128,10 +132,7 @@ function Skills() {
                   <div>
                      <div className={styles.skillsListContainer}>
                         <div className={styles.listContainerItems}>
-                           <div className={styles.skillItemName}>HTML5</div>
-                           <div className={styles.skillItemPercentage}>
-                              100%
-                           </div>
+                           <div className={styles.skillItemName}>Wordpress</div>
                         </div>
                         <div className={styles.percentageBar}>
                            <div className={styles.percentage100}></div>
@@ -139,29 +140,24 @@ function Skills() {
                      </div>
                      <div className={styles.skillsListContainer}>
                         <div className={styles.listContainerItems}>
-                           <div className={styles.skillItemName}>CSS3</div>
-                           <div className={styles.skillItemPercentage}>70%</div>
+                           <div className={styles.skillItemName}>SEO</div>
                         </div>
                         <div className={styles.percentageBar}>
-                           <div className={styles.percentage70}></div>
+                           <div className={styles.percentage100}></div>
+                        </div>
+                     </div>
+                     <div className={styles.skillsListContainer}>
+                        <div className={styles.listContainerItems}>
+                           <div className={styles.skillItemName}>Writing</div>
+                        </div>
+                        <div className={styles.percentageBar}>
+                           <div className={styles.percentage100}></div>
                         </div>
                      </div>
                      <div className={styles.skillsListContainer}>
                         <div className={styles.listContainerItems}>
                            <div className={styles.skillItemName}>
-                              Javascript
-                           </div>
-                           <div className={styles.skillItemPercentage}>60%</div>
-                        </div>
-                        <div className={styles.percentageBar}>
-                           <div className={styles.percentage60}></div>
-                        </div>
-                     </div>
-                     <div className={styles.skillsListContainer}>
-                        <div className={styles.listContainerItems}>
-                           <div className={styles.skillItemName}>React</div>
-                           <div className={styles.skillItemPercentage}>
-                              100%
+                              Computer Games
                            </div>
                         </div>
                         <div className={styles.percentageBar}>
@@ -170,22 +166,22 @@ function Skills() {
                      </div>
                      <div className={styles.skillsListContainer}>
                         <div className={styles.listContainerItems}>
-                           <div className={styles.skillItemName}>Tailwind</div>
-                           <div className={styles.skillItemPercentage}>80%</div>
+                           <div className={styles.skillItemName}>
+                              Body Building
+                           </div>
                         </div>
                         <div className={styles.percentageBar}>
-                           <div className={styles.percentage80}></div>
+                           <div className={styles.percentage100}></div>
                         </div>
                      </div>
                      <div className={styles.skillsListContainer}>
                         <div className={styles.listContainerItems}>
-                           <div className={styles.skillItemName}>Bootstrap</div>
-                           <div className={styles.skillItemPercentage70}>
-                              70%
+                           <div className={styles.skillItemName}>
+                              Watching Series / Movies
                            </div>
                         </div>
                         <div className={styles.percentageBar}>
-                           <div className={styles.percentage70}></div>
+                           <div className={styles.percentage100}></div>
                         </div>
                      </div>
                   </div>

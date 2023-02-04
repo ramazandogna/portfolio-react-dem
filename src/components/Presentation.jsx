@@ -1,8 +1,8 @@
 import { BiMouse } from 'react-icons/bi';
-import Header from '../Header/Header';
-import Perfil from '../../assets/img/project.png';
+import Header from '../components/Header.jsx';
+import Perfil from '../assets/img/project.png';
 import React from 'react';
-import styles from './presentation.module.css';
+import styles from '../styles/presentation.module.css';
 
 function Presentation() {
    return (

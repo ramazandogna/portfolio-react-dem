@@ -1,0 +1,79 @@
+.presentationBg {
+   @apply bg-violet-500 min-h-screen;
+}
+
+.presentation {
+   @apply grid mt-24 relative mx-40 grid-cols-2
+   max-lg:grid-cols-1 
+   max-lg:mt-10 max-lg:mx-5 max-lg:text-center max-lg:justify-center;
+}
+
+.firstDiv {
+   @apply py-0;
+}
+
+.title {
+   @apply py-2
+text-white relative
+   text-4xl font-semibold 
+   max-lg:grid-cols-1 max-lg:text-center 
+   max-lg:mx-5 max-lg:justify-center max-lg:inline-block;
+}
+
+.title::after {
+   @apply absolute content-[""] bg-white h-[3px] w-[0%] left-0 
+   -bottom-2 rounded-full 
+   duration-[400ms];
+}
+
+.title:hover::after {
+   @apply w-[100%];
+}
+
+.resume {
+   @apply mx-auto justify-center py-4 
+   text-white font-thin
+   max-w-4xl text-base
+   max-lg:px-8;
+}
+
+.contactButton {
+   @apply my-4 px-5 py-2.5 flex items-center text-center
+   transition duration-500 ease-in-out transform    text-xl text-white 
+   border-2 border-white
+   max-sm:mt-2
+   max-lg:mx-auto;
+}
+
+.contactButton:hover {
+   @apply hover:-translate-y-1 hover:scale-110 
+   hover:bg-white hover:text-violet-800 hover:border-violet-800 hover:border-4;
+}
+
+/* .contactButton:hover {
+   @apply;
+} */
+
+.contactIcon {
+   @apply px-2 text-white 
+   max-sm:flex max-sm:justify-center;
+}
+
+.perfilImg {
+   @apply flex ml-auto my-4 
+   shadow-2xl  
+   rounded-2xl
+   max-md:mb-5 max-md:mx-auto
+   max-lg:mx-auto max-lg:my-5;
+
+   width: 380px;
+}
+
+.scrollDown {
+   @apply flex py-4 my-4 justify-center items-center absolute bottom-5 left-0 right-0 mx-auto
+   text-white mt-2
+   max-lg:relative max-sm:justify-center;
+}
+.scrollDownText {
+   @apply px-2;
+}
