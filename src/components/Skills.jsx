@@ -35,7 +35,7 @@ function Skills() {
                         <p className={styles.skillP}>More then 1 years</p>
                      </div>
                   </div>
-                  {show === 'visible' ? (
+                  {show === true ? (
                      <AiOutlineArrowUp className={styles.upDownIcon} />
                   ) : (
                      <AiOutlineArrowDown className={styles.upDownIcon} />

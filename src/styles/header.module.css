@@ -1,6 +1,6 @@
 .nav {
    @apply py-10 items-center flex justify-between text-center
-   max-sm:px-4 max-sm:flex max-sm:justify-center  max-sm:py-2
+   max-sm:px-4 max-sm:flex max-sm:justify-center  max-sm:py-2 
    max-md:border-b-2
    max-lg:px-4 max-lg:flex max-lg:justify-center max-lg:py-2
    rounded;
@@ -16,7 +16,6 @@
 
 .logo {
    @apply left-0 right-0 top-0 flex relative  p-4
-   active:underline
    text-3xl text-white font-semibold whitespace-nowrap 
    border-b-2 border-transparent duration-500
    max-sm:ml-auto
@@ -42,7 +41,7 @@
 .navItems {
    @apply flex flex-col p-4 mt-4 
    md:flex-row md:space-x-8 md:mt-0 
-   max-lg:justify-center
+   max-lg:justify-center border-2
    text-gray-300;
    font-family: 'Montserrat-Light';
 }
@@ -55,7 +54,7 @@
    
    hover:border-white;
 }
-
+/* 
 .navItem::after {
    @apply absolute content-[""] bg-white h-[3px] w-[0%] left-0 
    -bottom-2 rounded-full 
@@ -64,4 +63,4 @@
 
 .navItem:hover::after {
    @apply w-[100%];
-}
+} */
