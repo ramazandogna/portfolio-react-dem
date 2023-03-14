@@ -6,8 +6,8 @@ import { GiSkills } from 'react-icons/gi';
 import styles from '../styles/skills.module.css';
 
 function Skills() {
-   const [show, setShow] = useState('visible');
-   const [show1, setShow1] = useState('hidden');
+   const [show, setShow] = useState(true);
+   const [show1, setShow1] = useState(true);
 
    return (
       <section id="skills" className={styles.section}>
