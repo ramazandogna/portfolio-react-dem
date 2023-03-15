@@ -6,7 +6,7 @@ function Header() {
       <div className={styles.nav}>
          <div className={styles.navDiv}>
             <a href="/">
-               <span className={styles.logo}>ramazandoğan</span>
+               <span className={styles.logo}>reactportf</span>
             </a>
 
             <div className={styles.navItemsContainer} id="navbar-default">

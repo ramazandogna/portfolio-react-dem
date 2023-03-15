@@ -1,4 +1,5 @@
 import { BiMouse } from 'react-icons/bi';
+import CV from '../assets/pdf/ramazan-resume.pdf';
 import Header from '../components/Header.jsx';
 import Perfil from '../assets/img/project.png';
 import React from 'react';
@@ -23,12 +24,8 @@ function Presentation() {
                   passages, and more recently with desktop publishing software
                   like Aldus PageMaker including versions of Lorem Ipsum.
                </p>
-               <a href="#skills">
-                  <div className={styles.contactIcon}>
-                     <button className={styles.contactButton}>
-                        CONTACT ME
-                     </button>
-                  </div>
+               <a href={CV} download={CV}>
+                  <button className={styles.contactButton}>Download CV</button>
                </a>
             </div>
             <div>

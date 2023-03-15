@@ -53,7 +53,7 @@ function Footer() {
                </button>
             </div>
          </div>
-         <div className={styles.copyright}>© Copyright 2023 Ramazan Doğan</div>
+         <div className={styles.copyright}>Created by Ramazan Doğan</div>
       </section>
    );
 }
