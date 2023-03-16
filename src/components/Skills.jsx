@@ -154,26 +154,7 @@ function Skills() {
                            <div className={styles.percentage100}></div>
                         </div>
                      </div>
-                     <div className={styles.skillsListContainer}>
-                        <div className={styles.listContainerItems}>
-                           <div className={styles.skillItemName}>
-                              Computer Games
-                           </div>
-                        </div>
-                        <div className={styles.percentageBar}>
-                           <div className={styles.percentage100}></div>
-                        </div>
-                     </div>
-                     <div className={styles.skillsListContainer}>
-                        <div className={styles.listContainerItems}>
-                           <div className={styles.skillItemName}>
-                              Body Building
-                           </div>
-                        </div>
-                        <div className={styles.percentageBar}>
-                           <div className={styles.percentage100}></div>
-                        </div>
-                     </div>
+
                      <div className={styles.skillsListContainer}>
                         <div className={styles.listContainerItems}>
                            <div className={styles.skillItemName}>
