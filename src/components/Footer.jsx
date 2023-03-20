@@ -28,7 +28,7 @@ function Footer() {
          </div>
          <div className={styles.container}>
             <p className={styles.footerParag}>
-               There is no important who you are, <br /> just say hi! to me in
+               There is no important who you are, <br /> just say hey! to me in
                this
                <br /> social medias
             </p>
